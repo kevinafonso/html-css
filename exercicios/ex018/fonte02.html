@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes Externas</title>
+    <style>
+        @font-face {
+            font-family: 'bella';
+            src: url('billybella.otf') format('opentype');
+            font-weight: 100;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'love';
+            src: url(lovelyvalentine.otf);
+        }
+        /*Tipos de format()
+        - opentype (otf)
+        - treutype (ttf)
+        - embedded-opentype
+        - truetype-aat (Apple Advenced Typography)
+        - svg
+        */
+
+        body{
+            font-family: 'love', Helvetica, sans-serif;
+            font-size: 3em;
+
+        }
+
+        h1 {
+            font-family: 'bella', Times, serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Kevin Sarah </h1>
+    <p>Kevin Sarah</p>
+</body>
+</html>
