@@ -13,6 +13,19 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.516);
+            margin: 10px;
+            margin-bottom: 30px;
+            position: relative;
+        }
+
+        caption{
+            font-size: 1.6em;
+            font-weight: bold;
+            padding:10px;
+            background-color: rgba(211, 211, 211, 0.59);
+            border-radius: 10px 10px 0px 0px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.516);
         }
         
         td , th {
@@ -24,8 +37,21 @@
             background-color: gray;
             color: white;
         }
+
+        thead > tr > th {
+            position: sticky;
+            top:-1px;
+            background-color: gray;
+        }
+
         td.num{
             text-align: right;
+        }
+        tbody > tr:nth-child(2n-1){/*para fazer o zebrado em linha impar colocar (odd)"impar*/
+            background-color: rgb(194, 193, 193);
+        }
+        tbody > tr:nth-child(2n){/*para fazer o zebrado em linha par basta colocar (even)*/
+            background-color: white;
         }
     </style>
 </head>
@@ -42,10 +68,11 @@
                 TR, TD, TH
     -->
     <table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 150px;">População</th>
             </tr>
         </thead>
         <tbody>
@@ -130,6 +157,10 @@
                 <td class="num">2 923 369</td>
             </tr>
             <tr>
+                <td>Mato Grosso do Sul</td>
+                <td class="num">2 833 742</td>
+            </tr>
+            <tr>
                 <td>Sergipe</td>
                 <td class="num">2 211 868</td>
             </tr>
@@ -156,11 +187,12 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
-                <td>210.147.125</td>
+                <th scope="row">Total de Habitantes</th>
+                <td class="num">204.753.602</td>
             </tr>
         </tfoot>
     </table>
-    
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi veniam labore beatae ipsam velit ipsum ab dolorem, autem doloremque, corporis harum ex a culpa ducimus ea, laudantium impedit sapiente ipsa quidem. Odit explicabo molestiae deserunt illo harum soluta labore eligendi enim quas consequuntur quia ipsa aspernatur, veniam libero fugiat officia maiores animi laudantium assumenda. Voluptatum, eius fugiat reprehenderit dicta beatae facilis. Veritatis soluta, suscipit sit accusamus sunt optio magni molestiae dolores cupiditate, officiis sequi eaque ducimus sint inventore qui fugiat laboriosam. Neque nisi ducimus quos iste tempore nesciunt aliquam deleniti ipsa doloribus assumenda quas itaque culpa vero inventore quisquam quia placeat totam molestiae officiis, veritatis debitis eos vitae iusto. Repellendus, animi autem error vitae aperiam beatae nisi nostrum aut voluptatibus consequatur vel, eos optio! Placeat assumenda quidem pariatur consequuntur sapiente numquam fuga fugit. Molestias asperiores molestiae, quisquam nemo soluta nihil in corrupti facilis at commodi temporibus sunt accusantium est mollitia quas velit fugit eligendi autem nam, a debitis quos. Eos illo, perferendis maxime inventore magnam quae dicta aliquam nobis libero aspernatur deleniti voluptatum ipsum amet ullam repellendus facere quas illum nulla nihil ratione expedita repellat quasi est? Ipsa nam amet quisquam esse temporibus quia repudiandae, placeat sit dolore ut ea nulla dolorem. Perspiciatis tenetur atque possimus voluptas dolore id consequatur distinctio deleniti, velit quibusdam pariatur, veniam, saepe at unde vitae maiores earum inventore voluptatibus! Aliquid magni earum repellendus vitae explicabo ad maxime debitis? Porro ab harum architecto repellendus, illum laudantium in iusto perspiciatis dolor distinctio magnam ex quas? Repudiandae nostrum iure laudantium rem officia quae laboriosam fugit vero. Cumque aspernatur quod dolore deserunt ea numquam laborum impedit atque provident nemo, delectus optio neque vel dolorem id quas nam harum aut earum maxime eos alias nisi pariatur consequatur? Minima dignissimos, nisi quae ducimus necessitatibus, autem placeat magnam aliquid quod, labore itaque! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt obcaecati exercitationem provident enim, dolorem voluptatem velit voluptatibus! Enim eum incidunt facere voluptas fugit sed et doloribus quasi modi, possimus est voluptates dolorum provident ex molestias fugiat voluptatem dolor magni tempore quisquam labore! Dolores vel quo rem, a laboriosam exercitationem odit soluta deserunt temporibus reiciendis architecto libero pariatur iusto asperiores? Praesentium tempore consequatur accusamus ipsam magni saepe exercitationem officia explicabo. Sed ea vel eaque eum quam, accusantium cupiditate ipsam repellendus earum dicta necessitatibus at atque. Assumenda, voluptatem. Fugiat, cum nulla adipisci dicta magnam, eligendi vitae, ipsam obcaecati nisi doloremque soluta? Magnam, unde perferendis placeat similique cumque velit! Asperiores, dignissimos? Eius suscipit quibusdam dolorem aliquam quidem hic omnis? Iusto neque officia ad repellat quae pariatur praesentium aliquid illo voluptatem a molestiae consequatur maxime voluptates modi nihil vitae, vel totam rerum unde! Dolorem consequuntur eveniet porro consectetur repellendus doloremque numquam, distinctio debitis assumenda culpa odit accusamus? Commodi beatae aspernatur officia hic iure praesentium tempora itaque quod temporibus consequuntur nulla corporis nobis architecto, asperiores rerum tenetur porro atque quidem alias repellendus, amet distinctio! Quia explicabo deserunt odit ab cupiditate accusamus tenetur voluptatem illum incidunt corrupti, at consequuntur debitis doloribus magnam, blanditiis dicta aperiam numquam itaque nam ad esse! Culpa soluta voluptate quia amet eum illum, ducimus maiores beatae sunt impedit! Possimus sequi error cumque cum repellat, commodi doloribus aliquam non! Praesentium modi officiis temporibus harum accusantium? Deleniti sed eum consequuntur voluptates suscipit quia vitae labore voluptatem. Nobis similique explicabo earum optio necessitatibus architecto illo ratione quam voluptatum perferendis, porro temporibus numquam quas reiciendis eaque laudantium? Ipsum, ducimus obcaecati corrupti odit deserunt cupiditate corporis consequuntur quas voluptatibus esse aut saepe atque, cumque mollitia impedit! Voluptatem error atque, alias optio, ea esse molestias repellat vel eum doloribus culpa eos cum doloremque praesentium, excepturi sed modi mollitia.
+    </p>
 </body>
 </html>
